@@ -10,18 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/christophwitzko/docker-kue-ui.git"
+    "url": "git+https://github.com/patricklx/docker-kue-ui.git"
   },
-  "author": "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
+  "author": "Patrick Pircher",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/christophwitzko/docker-kue-ui/issues"
+    "url": "https://github.com/patricklx/docker-kue-ui/issues"
   },
-  "homepage": "https://github.com/christophwitzko/docker-kue-ui#readme",
+  "homepage": "https://github.com/patricklx/docker-kue-ui#readme",
   "devDependencies": {
     "standard": "^8.0.0"
   },
   "dependencies": {
-    "kue": "^0.11.1"
+    "kue": "^0.11.1",
+    "ioredis": "^3.1.4"
   }
 }
