@@ -5,9 +5,8 @@ kue.createQueue({
   prefix: process.env.KUE_PREFIX,
   redis: {
     createClientFactory() {
-      const redisUrl = process.env.REDIS_URL || 'redis://redis:6379';
       return new Redis({
-        sentinels: [redisUrl], 
+        sentinels: [{host: process.env.REDIS_HOST, port: process.env.REDIS_PORT}], 
         name: process.env.REDIS_MASTER || 'mymaster'
       });
     }
