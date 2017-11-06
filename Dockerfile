@@ -10,4 +10,4 @@ RUN npm install -g redis-commander
 
 EXPOSE 5000
 EXPOSE 8081
-CMD npm start & redis-commander --sentinel-host $SENTINEL_HOST
+CMD ["sh", "-c", "npm start & redis-commander --sentinel-host $SENTINEL_HOST"]
