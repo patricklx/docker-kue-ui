@@ -6,7 +6,7 @@ kue.createQueue({
   redis: {
     createClientFactory() {
       return new Redis({
-        sentinels: [{host: process.env.REDIS_HOST, port: process.env.REDIS_PORT}], 
+        sentinels: [{host: process.env.SENTINEL_HOST, port: process.env.SENTINEL_PORT}], 
         name: process.env.REDIS_MASTER || 'mymaster'
       });
     }
